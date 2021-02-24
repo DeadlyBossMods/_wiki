@@ -7,6 +7,8 @@ Insert the following code to get this to work:
 */
 
 document.addEventListener("DOMContentLoaded", () => {
+	console.log("Loaded DBM content injector");
+
 	const params = new URLSearchParams(window.location.hash.replace("#","?"));
 	const lookup = {
 		1219:	"DBM-Classic-1.13.6-Released"
