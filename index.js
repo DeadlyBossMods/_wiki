@@ -3,7 +3,7 @@ Insert the following code to get this to work:
 
 <div id="dbm-injection"></div>
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<script src="https://raw.githubusercontent.com/DeadlyBossMods/_wiki/master/index.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/DeadlyBossMods/_wiki/index.js"></script>
 */
 
 document.addEventListener("DOMContentLoaded", () => {
