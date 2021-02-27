@@ -23,9 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
 			fetch("https://raw.githubusercontent.com/wiki/DeadlyBossMods/_wiki/" + lookup[page] + ".md")
 				.then(response => response.text())
 				.then(html => {
-					const div = document.createElement("div");
+					const div = document.createElement("div"),
+					      elem = document.getElementById("dbm-injection");
 					div.innerHTML = "<h3>" + lookup[page].replaceAll("-", " ") + "</h3>" + marked(html) + "<hr>";
-					document.getElementById("dbm-injection").appendChild(div)
+					elem.appendChild(div)
+					elem.scrollIntoView({behavior: 'smooth'});
 				});
 		}
 	}
