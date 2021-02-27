@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	const params = new URLSearchParams(window.location.hash.replace("#","?"));
 	const lookup = {
+		28:	"Forum-Access-&-Discord-Info",
+		405:	"DBM-Status-Update-(Updated-Oct-2nd,-20)",
+		428:	"DBM-Supporter-Benefits-Info",
 		1219:	"DBM-Classic-1.13.6-Released"
 	}
 
