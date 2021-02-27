@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				.then(response => response.text())
 				.then(html => {
 					const div = document.createElement("div");
-					div.innerHTML = "<h3>" + lookup[page].replace("-", " ") + "</h3>" + marked(html) + "<hr>";
+					div.innerHTML = "<h3>" + lookup[page].replaceAll("-", " ") + "</h3>" + marked(html) + "<hr>";
 					document.getElementById("dbm-injection").appendChild(div)
 				});
 		}
